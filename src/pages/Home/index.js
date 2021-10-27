@@ -29,7 +29,9 @@ const Home = () => {
 				}}
 			/>
 
-			<HighlightGridBanner image={BottlesImage03} />
+			<HighlightGridBanner
+				wines={[{ image: BottlesImage03 }, { image: BottlesImage03 }]}
+			/>
 		</Container>
 	);
 };

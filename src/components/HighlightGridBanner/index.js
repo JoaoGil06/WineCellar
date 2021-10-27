@@ -1,14 +1,13 @@
 import React from 'react';
 import { Container, GridItem } from './styles';
-const HighlightGridBanner = ({ image }) => {
+const HighlightGridBanner = ({ wines }) => {
 	return (
 		<Container>
-			<GridItem>
-				<img src={image} alt='wine' />
-			</GridItem>
-			<GridItem>
-				<img src={image} alt='wine' />
-			</GridItem>
+			{wines.map((wine, index) => (
+				<GridItem key={index}>
+					<img src={wine.image} alt='wine' />
+				</GridItem>
+			))}
 		</Container>
 	);
 };

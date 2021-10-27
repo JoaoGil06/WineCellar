@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	height: 75vh;
+	height: 45vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,6 +17,7 @@ export const Container = styled.div`
 
 export const Info = styled.div`
 	position: absolute;
+	text-align: center;
 	h1 {
 		font-size: 4rem;
 	}
@@ -25,7 +26,6 @@ export const Info = styled.div`
 		font-size: 1.2rem;
 		width: 35rem;
 	}
-	${({ position }) => (position === 'right' ? `right: 15vw;` : `left: 15vw`)}
 `;
 
 export const Button = styled.button`

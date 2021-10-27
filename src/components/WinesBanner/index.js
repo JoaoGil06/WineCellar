@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Container, Info, Button } from './styles';
 
-const HighlightBanner = ({ item }) => {
-	const { image, title, description, position } = item;
+const WinesBanner = ({ item }) => {
+	const { image, title, description } = item;
 
 	const renderInfo = () => (
-		<Info position={position}>
+		<Info>
 			<h1>{title}</h1>
 			<p>{description}</p>
 
@@ -22,4 +22,4 @@ const HighlightBanner = ({ item }) => {
 	);
 };
 
-export default HighlightBanner;
+export default WinesBanner;

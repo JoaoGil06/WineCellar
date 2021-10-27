@@ -58,7 +58,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #222222;
+  background-color: #fff;
   color: #fff;
   max-width: 100vw !important;
 }
